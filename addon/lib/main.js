@@ -1,9 +1,10 @@
 var buttons = require('sdk/ui/button/action');
 var tabs = require("sdk/tabs");
+var self = require("sdk/self");
 
 var button = buttons.ActionButton({
-  id: "mozilla-link",
-  label: "Visit Mozilla",
+  id: "style-tab",
+  label: "Style Tab",
   icon: {
 	    "16": "./icon-16.png",
 	    "32": "./icon-32.png",
@@ -13,5 +14,9 @@ var button = buttons.ActionButton({
 });
 
 function handleClick(state) {
-  tabs.open("http://www.mozilla.org/");
+	tabs.activeTab.attach({
+		contentScriptFile: self.data.url("gmail-compose-modify.js")
+	});
 }
+
+
