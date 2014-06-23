@@ -5,9 +5,9 @@ var iframe = iframeContainer.childNodes[0];
 var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
 
 var iconDiv = innerDoc.createElement('div');
-// TODO: Fetch images from current source instead of external link
-iconDiv.innerHTML = '<img src="http://cdn-static.zdnet.com/i/story/60/52/001470/firefox-logo_small.png" height="96" width="96"><br>';
+iconDiv.innerHTML = '<img src="http://people.mozilla.org/~faaborg/files/shiretoko/firefoxIcon/firefox-128-noshadow.png" height="96" width="96"><br>';
 
 
-// TODO: Prepend instead of appending. Note: If the image is prepended, it does not appear after email is received.
-innerDoc.body.appendChild(iconDiv);
+// TODO: Provide option for placing icon either on top or bottom 
+innerDoc.body.insertBefore(iconDiv, innerDoc.body.childNodes[0]);
+//innerDoc.body.appendChild(iconDiv);
