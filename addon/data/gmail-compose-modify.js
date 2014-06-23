@@ -18,6 +18,7 @@ if (currentTabUrl.match(urlMatch)) {
 	console.log(currentTabUrl);
 		// TODO: Provide option for placing icon either on top or bottom 
 		innerDoc.body.insertBefore(iconDiv, innerDoc.body.childNodes[0]);
+		console.log("Bugs bunny says yay!!!");
 	}
 else {
 	console.log("Bugs bunny says booo :(");
