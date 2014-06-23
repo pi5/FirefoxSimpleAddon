@@ -19,4 +19,3 @@ function handleClick(state) {
 	});
 }
 
-
