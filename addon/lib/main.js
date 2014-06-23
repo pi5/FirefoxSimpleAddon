@@ -18,5 +18,3 @@ function handleClick(state) {
 		contentScriptFile: self.data.url("gmail-compose-modify.js")
 	});
 }
-
-

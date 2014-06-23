@@ -10,4 +10,3 @@ iconDiv.innerHTML = '<img src="http://people.mozilla.org/~faaborg/files/shiretok
 
 // TODO: Provide option for placing icon either on top or bottom 
 innerDoc.body.insertBefore(iconDiv, innerDoc.body.childNodes[0]);
-//innerDoc.body.appendChild(iconDiv);
