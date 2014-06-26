@@ -1,9 +1,31 @@
 {
-  "name": "addon",
-  "title": "addon",
-  "id": "jid1-ljyUy92C5l7ZxQ",
-  "description": "a basic add-on",
-  "author": "",
-  "license": "MPL 2.0",
-  "version": "0.1"
+	"name": "addon",
+		"title": "addon",
+		"id": "jid1-ljyUy92C5l7ZxQ",
+		"description": "a basic add-on",
+		"author": "",
+		"license": "MPL 2.0",
+		"version": "0.1",
+		"preferences" : [{
+			"name": "default_icon",
+			"type": "radio",
+			"title": "Default Icon",
+			"value": "N",
+			"options": [
+			{
+				"value": "beta",
+				"label": "Beta"
+			},
+			{
+				"value": "nightly",
+				"label": "Nightly"
+			},
+			{
+				"value": "aurora",
+				"label": "Aurora"
+			}
+			]
+		}]
+
+
 }
